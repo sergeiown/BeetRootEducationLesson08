@@ -6,7 +6,7 @@ _LMS Beetroot Academy progress_
 
 **Обов'язково:**
 
-Зверстати шопінг ліст. Посилання на нього в Figma — ось тут. 
+Зверстати шопінг ліст. Посилання на нього в Figma — [ось тут.](https://www.figma.com/file/mcLMf5qIXLwyzmTEoEiFK1/CSS-Dinner-shoping-list) 
 
 В рішенні обов’язково повинні бути використані селектори:
 
