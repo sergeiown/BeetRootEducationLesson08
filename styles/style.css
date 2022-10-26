@@ -55,27 +55,31 @@ h4 {
 .container {
   margin: 0 auto;
   max-width: 800px;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
-/*фон листа*/
+/*список без маркеров*/
 .shoping-list {
   list-style: none;
-  padding: 0;
-  margin: 0 0 40px;
+  padding: 0px;
+  margin: 0 0 50px;
 }
 /*фон и границы всех элементов*/
 .shoping-list li {
   background: #7a7593;
-  border: 0 solid #fff;
+  border: solid #7a7593;
+  border-width: 4px 0;
 }
 /*отдельно для нечетных*/
 .shoping-list li:nth-child(odd) {
   background: #88839e;
+  border: solid #88839e;
+  border-width: 4px 0;
 }
 /*трансформация при наведении*/
 .shoping-list li:hover {
   background: #625e77;
+  border: solid #ffffff;
   border-width: 4px 0;
 }
 /*трансформация при нажатии*/
@@ -89,7 +93,6 @@ h4 {
   height: 26px;
   vertical-align: middle;
   position: relative;
-  top: -2px;
   cursor: pointer;
   margin-right: 10px;
 }
