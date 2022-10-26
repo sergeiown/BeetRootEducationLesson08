@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box; /*Firefox*/
+  -moz-box-sizing: border-box; /*Safari, Chromium*/
+  box-sizing: border-box; /*IE, Opera*/
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  border: 25px solid #fff;
+  background-color: #3b3f45;
+  color: #f9f9f9;
+}
+
+.header,
+.footer {
+  text-align: center;
+  background: #4a4f56;
+  padding: 20px 0;
+  color: #eb7e7f;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #eb7e7f;
+  font-weight: 600;
+}
+h1 {
+  font-size: 36px;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 40px 20px;
+}
+
+/*фон листа*/
+.shoping-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+}
+/*фон и границы всех элементов*/
+.shoping-list li {
+  background: #7a7593;
+  border: 0 solid #fff;
+}
+/*отдельно для нечетных*/
+.shoping-list li:nth-child(odd) {
+  background: #88839e;
+}
+/*трансформация при наведении*/
+.shoping-list li:hover {
+  background: #625e77;
+  border-width: 4px 0;
+}
+/*трансформация при нажатии*/
+.shoping-list li:active {
+  background: #eb7e7f;
+}
+
+/*эволюции чекбокса*/
+.shoping-list [type="checkbox"] {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.shoping-list [type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #a3a0b5;
+}
+.shoping-list [type="checkbox"]:checked + span .description {
+  color: inherit;
+}
+.shoping-list label {
+  display: block;
+  cursor: pointer;
+  padding: 15px;
+}
+.shoping-list .description {
+  font-size: 80%; /*нет возможности перечеркнуть ровно при уменьшении текста тега small, класса .description*/
+  color: #cdcbd6;
+  vertical-align: middle;
+}
