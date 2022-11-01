@@ -96,6 +96,16 @@ h4 {
   cursor: pointer;
   margin-right: 10px;
 }
+
+/*добавляем круглые скобки до и после <small>*/
+.shoping-list .description:before {
+  content: "(";
+}
+.shoping-list .description:after {
+  content: ")";
+}
+
+/*смена цвета текста и перечеркивание*/
 .shoping-list [type="checkbox"]:checked + span {
   text-decoration: line-through;
   color: #a3a0b5;
